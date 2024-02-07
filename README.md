@@ -1,5 +1,6 @@
 # Using-Action-Recognition-to-Crack-reCAPTCHA
 
+[Complete report](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/ab04b7a8758076a8a95ff77e174bc60c7b7a5709/%E5%88%A9%E7%94%A8%E5%8B%95%E4%BD%9C%E8%BE%A8%E8%AD%98%E7%A0%B4%E8%A7%A3_%E5%A0%B1%E5%91%8A.pdf)
 ## Summary
 <!-- Summary -->
 The goal of this project is to distinguish between machine and human beings when using reCAPTCHA with action. We implement the most powerful attacker and defense strategies to find out what degree of a cropped image will successfully distinguish machine and human beings. Also, to produce the cropped image for defense, we introduce the Grad-CAM technique to know where the reference of the attacker is and crop these places. Ultimately, we find the most effective method to defend the attacker, resulting in the attacker having 98%, 60%, and 65% accuracy for 3 categories.
@@ -26,6 +27,13 @@ By examining the class activataion map, it becomes straightforward to assess the
 
 ## DataSet example
 <!-- Dataset -->
+[Level 1](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/tree/ab04b7a8758076a8a95ff77e174bc60c7b7a5709/level%201%20picture%20example)
+
+[Level 2](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/tree/ab04b7a8758076a8a95ff77e174bc60c7b7a5709/level%202%20picture%20example)
+
+[Level 3](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/tree/ab04b7a8758076a8a95ff77e174bc60c7b7a5709/level%203%20picture%20example)
+
+
 
 ## Models
 <!-- Models 
@@ -159,3 +167,4 @@ In this version, the testing accuracy is exceptionally high only for the dribble
 
 ## Conclusion
 <!-- conclusion -->
+In the results of the final version, we believe that the 'sweet spot' for 'Dunk' and 'Shoot' is to crop the images to retain 'partial arms' and 'chest areas.' The experiments conducted in this phase aimed to enhance the model's accuracy as much as possible under conditions where humans can recognize. Throughout the experiments, we also influenced the areas of focus. However, it can be observed that the testing accuracy for dribbling remains high, indicating that the sweet spot for dribbling has not been reached. We believe that the actions in this category show significant differences after cropping compared to the other two, making them easier to recognize. This phenomenon is due to the initial design oversight in anticipating such a substantial similarity between 'Dunk' and 'Shoot' after cropping.
