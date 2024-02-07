@@ -49,29 +49,108 @@ This version involves removing the basketball hoop factor from the training and 
 ![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Basic%20model).png)
 
 ![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Basic%20model).png)
+Table 1
 
 ![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Basic%20model).png)
 
 Test results after training:
 
-> **Dribbling: 100%,  Dunking: 85.3%, Shooting: 95.7%**
+> **Dribble: 100%,  Dunk: 85.3%, Shoot: 95.7%**
 
 The following are the features summarized based on the Grad-CAM Picture:
 
-* Dribbling: both sides of the head to the shoulders, ball
-* Dunking: wrist, lower edge of the ball, court + lighting
-* Shooting: arm, elbow, ball
+* Dribble: both sides of the head to the shoulders, ball
+* Dunk: wrist, lower edge of the ball, court + lighting
+* Shoot: arm, elbow, ball
 
 From the results, it is known that the goal of focusing on the main character has been achieved, and the model no longer pays attention to the basket area,
 Therefore, this version is chosen as the beginning of the flow chart. The next versions will continue to test the pictures after cropping,
 If the accuracy is poor, then add them to the training set and retrain.
 
 
-### Gray
-
 ### Level 1
+This version was initially tested using a dataset, as shown in the example image below. The dataset had already cropped some of the model's attention areas. The results are shown in Table 2, indicating a noticeable need for improvement in accuracy. Consequently, the dataset was added to the training set and retrained, as shown in Table 3.
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%201%20model).png)
+Table 2
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%201%20model).png)
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%201%20model).png)
+Table 3
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%201%20model).png)
+
+<!-- level one images -->
+
+Test results after training:
+
+> **Dribble: 100%,  Dunk: 97%, Shoot: 87%**
+
+The following are the features summarized based on the Grad-CAM Picture:
+
+* Dribble: Head to shoulders on both sides, and the ball.
+* Dunk: Arm, lower edge of the ball, and head.
+* Shoot: Arm, underarm.
+
+From the results, it is evident that at this stage, the model has learned features similar to those described above and remains comparable to the previous version, resulting in very high accuracy. The next version will continue testing by cropping around the model's attention areas.
 
 ### level 2
+Following the workflow diagram, images were cropped based on their attention areas and tested for accuracy. As shown in Table 4, the results were unsatisfactory, indicating a need for further improvement in accuracy. Consequently, the dataset was added to the training set and retrained, as shown in Table 5.
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%202%20model).png)
+Table 4
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%202%20model).png)
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%202%20model).png)
+Table 5
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%202%20model).png)
+
+<!-- level two images -->
+
+Test results after training:
+
+> **Dribble: 99%,  Dunk: 97%, Shoot: 95%**
+
+The following are the features summarized based on the Grad-CAM Picture:
+
+* Dribble: Team name and number on the chest, ball, arm.
+* Dunk: Arm, wrist, relatively scattered (such as court, lighting, etc.).
+* Shoot: Arm, armpit.
+
+This version achieved extremely high testing accuracy, indicating that images at the same level can be successfully recognized. There is still room for further cropping in the regions, and the model's performance remains within the range recognizable by humans. Therefore, the experiment proceeds to the next version.
+
 
 ### level 3
+
+Following the workflow diagram, testing was conducted using images cropped based on their attention areas. The performance was still unsatisfactory, as shown in Table 6, prompting another round of retraining.
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%203%20model).png)
+Table 6
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%203%20model).png)
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%203%20model).png)
+Table 7
+
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%203%20model).png)
+
+<!-- level three images -->
+
+Test results after training:
+
+> **Dribble: 98%,  Dunk: 60%, Shoot: 65%**
+
+The following are the features summarized based on the Grad-CAM Picture:
+
+* Dribble: Team name and number on the chest, arm.
+* Dunk: Face, court background, wrist.
+* Shoot: Arm, armpit, face.
+
+In this version, the testing accuracy is exceptionally high only for the dribble category, while the other two have significantly decreased compared to the previous versions. The images used in this version have gradually moved towards areas that are challenging for human recognition. Continuous cropping may render them difficult for humans to discern, and the machine may not be able to enhance accuracy through further training. Therefore, this version is considered the final iteration. The discussion on human and machine recognition rates will be included in the final report.
+
+
+## Conclusion
 <!-- conclusion -->
