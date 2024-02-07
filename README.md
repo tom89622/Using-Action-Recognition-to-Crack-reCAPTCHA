@@ -71,15 +71,17 @@ If the accuracy is poor, then add them to the training set and retrain.
 ### Level 1
 This version was initially tested using a dataset, as shown in the example image below. The dataset had already cropped some of the model's attention areas. The results are shown in Table 2, indicating a noticeable need for improvement in accuracy. Consequently, the dataset was added to the training set and retrained, as shown in Table 3.
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%201%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/test%20table%20(Level%201%20model).png)
+
 Table 2
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%201%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/original%20image%20(Level%201%20model).png)
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%201%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/statistic%20(Level%201%20model).png)
+
 Table 3
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%201%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/Grad-CAM%20image%20(Level%201%20model).png)
 
 <!-- level one images -->
 
@@ -98,16 +100,17 @@ From the results, it is evident that at this stage, the model has learned featur
 ### level 2
 Following the workflow diagram, images were cropped based on their attention areas and tested for accuracy. As shown in Table 4, the results were unsatisfactory, indicating a need for further improvement in accuracy. Consequently, the dataset was added to the training set and retrained, as shown in Table 5.
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%202%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/test%20table%20(Level%202%20model).png)
+
 Table 4
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%202%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/original%20image%20(Level%202%20model).png)
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%202%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/statistic%20(Level%202%20model).png)
+
 Table 5
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%202%20model).png)
-
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/Grad-CAM%20image%20(Level%202%20model).png)
 <!-- level two images -->
 
 Test results after training:
@@ -127,15 +130,17 @@ This version achieved extremely high testing accuracy, indicating that images at
 
 Following the workflow diagram, testing was conducted using images cropped based on their attention areas. The performance was still unsatisfactory, as shown in Table 6, prompting another round of retraining.
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/test%20table%20(Level%203%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/test%20table%20(Level%203%20model).png)
+
 Table 6
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/original%20image%20(Level%203%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/original%20image%20(Level%203%20model).png)
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/b136581dea22f73a1aa592c846f50b553d732d70/image%20reference/statistic%20(Level%203%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/statistic%20(Level%203%20model).png)
+
 Table 7
 
-![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/f53b65cc55373909dbf7022fc0a22e9e8226b953/image%20reference/Grad-CAM%20image%20(Level%203%20model).png)
+![image](https://github.com/tom89622/Using-Action-Recognition-to-Crack-reCAPTCHA/blob/042e2120b8ce9ce5e9d1672d21d529f67bde6ef9/image%20reference/Grad-CAM%20image%20(Level%203%20model).png)
 
 <!-- level three images -->
 
